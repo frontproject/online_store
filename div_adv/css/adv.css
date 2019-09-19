@@ -43,54 +43,15 @@ h3 span {
 .goods-cart:hover {
 
 }
-.product_img {
-	margin: 30px 0;
+.goods-cart img {
+	margin-top: 30px;
 }
 
 .goods-cart .goods-name {
 	color: #34404b;
 	font-weight: 700;
-	margin-bottom: 30px;
 }
 .goods-cart .goods-price {
 	color: #ff5912;
 	font-weight: 700;
-
-}
-.sizes span {
-	margin: 0 10px;
-}
-.size {
-	text-decoration: none;
-	color: #34404b;
-}
-.size:hover {
-	color: #ff5912;
-}
-.colors {
-	margin-top: 30px;
-	margin-bottom: 60px;
-}
-.color {
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	display: inline-block;
-	margin: 10px 5px;
-	text-align: center;
-}
-.red {
-	background-color: #e12e3f;
-}
-.dark {
-	background-color: #34404b;
-}
-.blue {
-	background-color: #3ab3ff;
-}
-.green {
-	background-color: #2fd967;
-}
-.icons a {
-	margin: 0 20px;
 }
