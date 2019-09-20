@@ -1,3 +1,8 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 html, body {
 	margin: 0;
 	box-sizing: border-box;
@@ -28,30 +33,124 @@ h3 span {
 	width: 1200px;
 	margin: 10px auto;
 }
-.goods-block {
-	margin:80px 0;
-}
-.goods-cart {
-	width: 270px;
-	height: 365px;
-	margin: 0 15px;
+.block-adv {
+	width: 56%;
+	min-height: 100px;
 	background: #fff;
+	border: 1px solid rgba(52, 64, 75, 0.05);
+	margin: 0 -2%;
+	display: inline-block;
+}
+.block-adv .sale {
+	width: 25%;
+	margin: 0 2%;
 	float: left;
+}
+.sale-img {
+	width: 80px;
+	height: 80px;
+	background-image: url(../../img/sale_img.png);
+	margin: 10px auto;
 	text-align: center;
+	overflow: hidden;
+}
+.sale-img span {
+	font-style: italic;
+	font-size: 14px;
+	color: #fff;
+	padding-top: 15px;
+	display: block;
+}
+.sale-img p {
+	font-weight: 700;
 	font-size: 18px;
+	color: #fff;
 }
-.goods-cart:hover {
-
+.block-adv .text {
+	width: 40%;
+	float: left;
+	margin: 0 2%;
+	text-align: left;
+	min-height: 100px;
+	position: relative;
 }
-.goods-cart img {
-	margin-top: 30px;
+.block-adv .text::after {
+	content: '';
+	display: block;
+	width: 2px;
+	height: 70px;
+	background: rgba(52, 64, 75, 0.05);
+	position: absolute;
+	right: -12px;
+	top: 15px
 }
-
-.goods-cart .goods-name {
+.block-adv .text h3 {
 	color: #34404b;
-	font-weight: 700;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 0;
+	padding-top: 20px;
 }
-.goods-cart .goods-price {
+.block-adv .text p {
+	color: #495662;
+	font-size: 12px;
+	line-height: 30px;
+}
+.block-adv .adv-price {
+	width: 23%;
+	min-height: 100px;
+	float: left;
+	margin: 0 2%;
 	color: #ff5912;
+	font-size: 32px;
 	font-weight: 700;
+	padding-top: 20px;
+	/*text-align: center;*/
 }
+.block-adv .adv-price span {
+	font-size: 22px;
+}
+.block-adv .adv-price p::before {
+	content: '';
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-image: url(../../img/Add_To_Cart_Ico.png);
+	margin-right: 25px;
+}
+.adv-area {
+	width: 40%;
+	min-height: 100px;
+	background: #fff;
+	float: right;
+	border: 1px solid rgba(52, 64, 75, 0.05);
+	padding-top: 20px;
+}
+.adv-area p {
+	text-align: center;
+}
+.adv-area p span {
+	color: #ff5912;
+}
+.adv-size {
+	color: #34404b;
+	opacity: 0.4;
+	margin-top: 10px;
+	font-family: sans-serif;
+	letter-spacing: 10px;
+	font-size: 12px;
+
+}
+
+
+
+
+/*
+1200 -100%
+670 - x
+
+x = 670*100/1200
+x = 55.8 %
+
+470*100/1200 = 39.2*/
