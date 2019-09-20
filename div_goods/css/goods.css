@@ -39,10 +39,34 @@ h3 span {
 	float: left;
 	text-align: center;
 	font-size: 18px;
+	display: block;
+	position: relative;
 }
-.goods-cart:hover {
 
+
+
+.product-item_hover {
+	display: none;
 }
+
+
+
+.goods-cart:hover .product-item{
+	display: none;
+}
+.goods-cart:hover .product-item_hover {
+	display: block;
+	width: 270px;
+	height: 365px;
+	border: 1px solid rgba(144,206,240,1);
+	box-shadow: 0px 0px 84px 11px rgba(144,206,240,1);
+}
+.goods-cart:hover .product-item_hover .goods-name{
+	color: #ff5912;
+}
+
+
+
 .product_img {
 	margin: 30px 0;
 }
@@ -50,13 +74,14 @@ h3 span {
 .goods-cart .goods-name {
 	color: #34404b;
 	font-weight: 700;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .goods-cart .goods-price {
 	color: #ff5912;
 	font-weight: 700;
 
 }
+
 .sizes span {
 	margin: 0 10px;
 }
@@ -68,17 +93,24 @@ h3 span {
 	color: #ff5912;
 }
 .colors {
-	margin-top: 30px;
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 .color {
 	width: 14px;
 	height: 14px;
 	border-radius: 50%;
 	display: inline-block;
-	margin: 10px 5px;
+	margin: 0 5px;
 	text-align: center;
 }
+
+.goods-cart .product-item_hover .color:hover {
+	width: 16px;
+	height: 16px;
+}
+
+
 .red {
 	background-color: #e12e3f;
 }
@@ -91,6 +123,7 @@ h3 span {
 .green {
 	background-color: #2fd967;
 }
+
 .icons a {
 	margin: 0 20px;
 }
